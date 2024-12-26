@@ -9,8 +9,8 @@ const printCompilationMessage = require('./compilation.config.js');
 
 module.exports = (_, argv) => ({
   output: {
-    // publicPath: "http://localhost:8088/",
-    publicPath: "https://main-micro-frontend.vercel.app/",
+    publicPath: "http://localhost:8088/",
+    // publicPath: "https://main-micro-frontend.vercel.app/",
   },
 
   resolve: {
@@ -66,14 +66,14 @@ module.exports = (_, argv) => ({
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        // order: "order@http://localhost:8085/remoteEntry.js",
-        order: "order@https://order-micro.vercel.app/remoteEntry.js",
-        // product: "product@http://localhost:8009/remoteEntry.js",
-        product: "product@https://product-micro-n79z.vercel.app/remoteEntry.js",
-        // auth: "auth@http://localhost:8087/remoteEntry.js",
-        auth: "auth@https://auth-micro-psi.vercel.app/remoteEntry.js",
-        // admin: "admin@http://localhost:8089/remoteEntry.js",
-        admin: "admin@https://admin-micro.vercel.app/remoteEntry.js",
+        order: "order@http://localhost:8085/remoteEntry.js",
+        // order: "order@https://order-micro.vercel.app/remoteEntry.js",
+        product: "product@http://localhost:8009/remoteEntry.js",
+        // product: "product@https://product-micro-n79z.vercel.app/remoteEntry.js",
+        auth: "auth@http://localhost:8087/remoteEntry.js",
+        // auth: "auth@https://auth-micro-psi.vercel.app/remoteEntry.js",
+        admin: "admin@http://localhost:8089/remoteEntry.js",
+        // admin: "admin@https://admin-micro.vercel.app/remoteEntry.js",
       },
       exposes: {},
       shared: {
