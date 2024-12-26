@@ -37,6 +37,9 @@ const App = () => {
 
       {/* <Route path='/admin/*' element={<Suspense fallback={<div> Loaddding</div>}><Admin />
       </Suspense>} /> */}
+
+      {/* <Route path='/admin/*' element={<Suspense fallback={<div> Loaddding</div>}><Admin />
+      </Suspense>} /> */}
     </Routes >
 
   </>
