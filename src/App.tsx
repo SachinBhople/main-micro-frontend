@@ -3,6 +3,7 @@ import React, { Suspense } from 'react'
 import './index.css'
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom'
 // import Home from './components/Home'
+// import Home from './components/Home'
 // const Home = React.lazy(() => import('./components/Home'));
 const Order = React.lazy(() => import('order/App'));
 const Admin = React.lazy(() => import('admin/App'));
